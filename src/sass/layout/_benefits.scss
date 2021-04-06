@@ -1,0 +1,129 @@
+.section.benefits {
+    padding-top: 30px;
+    background: linear-gradient(to bottom, #111518 66%, $secondary-color 34%);
+
+    padding-bottom: 39px;
+
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(to top, $secondary-color 58%,  #111518 42%);
+    }
+
+    @media screen and (min-width: 1344px) {
+        padding-top: 124px;
+        background: linear-gradient(to top, $secondary-color 50%,  #111518 50%);
+    }
+}
+
+.benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    // margin-left: -22px;
+    // margin-top: -10px;
+    counter-reset: item;
+    padding: 20px 14px 20px 30px;
+    background-color:$secondary-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @media screen and (min-width: 768px) {
+        padding-left: 96px;
+    }
+
+    @media screen and (min-width: 1344px) {
+        padding-top: 70px;
+        padding-right: 82px;
+        padding-bottom: 62px;
+        padding-left: 84px;
+    }
+}
+
+.section-title.benefits {
+    text-align: left;
+    color: $secondary-color;
+    margin-bottom: 30px;
+    width: 200px;
+
+    @media screen and (min-width: 768px) {
+        width: 480px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1344px) {
+        display: none;
+    }
+}
+
+
+.benefits__item {
+    position: relative;
+    width: calc(100% / 1 - 22px);
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+    
+
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 22px);
+        padding-right: 31px;
+
+        &:nth-child(2) {
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (min-width: 1344px) {
+        width: calc(100% / 3);
+        padding-right: 20px;
+
+        &:nth-child(-n + 3){
+            margin-bottom: 32px;
+        }
+
+        &:nth-child(3) {
+            margin-top: 0;
+        }
+    }
+
+    &::before {
+        display: inline-flex;
+        content: "— 0" counter(item);
+        counter-increment: item;
+        max-width: 100%;
+        height: 23px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.64;
+        color: $accent-color;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 1344px) {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.benefits__item_text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.43;
+    @media screen and (min-width: 1344px) {
+        font-size: 20px;
+    }
+}
+
+// .problems__item_text::before {
+//     display: block;
+//     content: counter(item);
+//     counter-increment: item;
+//     width: 16px;
+//     height: 16px;
+//     font-weight: bold;
+//     font-size: 14px;
+//     line-height: 1.64;
+//     color: $accent-color;
+// }

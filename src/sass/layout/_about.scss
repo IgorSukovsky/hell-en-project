@@ -1,0 +1,172 @@
+.section.about-section {
+  padding-top: 0;
+}
+
+
+.about-section__section-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.about-section__image {
+  margin-bottom: 20px;
+
+  width: 243px;
+}
+.about-section__sub-title {
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #b9b9b9;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+}
+
+.about-section__list-item-box {
+  position: relative;
+}
+.about-section__list-item {
+  display: flex;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+
+  padding-left: 25px;
+}
+
+.about-section__list-item::before {
+  content: '';
+  fill: $accent-color;
+  width: 18px;
+  height: 14px;
+
+  display: flex;
+
+  background-image: url('../images/teachers/check.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+
+.about-section__line {
+  margin-bottom: 20px;
+  width: 20px;
+  height: 2px;
+  border: 1px solid $accent-color;
+  background-color: $accent-color;
+}
+
+.about-section__text {
+  margin-bottom: 15px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: $main-text-color;
+  letter-spacing: 0.01em;
+}
+
+.about-section__link {
+  color: $accent-color;
+  letter-spacing: 0.01em;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section__section-title {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .about-section__general-box {
+    display: flex;
+  }
+
+  .about-section__text-box {
+    width: 402px;
+  }
+
+  .about-section__image {
+    margin-right: 40px;
+  }
+
+  .about-section__text--wide {
+    width: 410px;
+  }
+
+  .about-section__list-item-box {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .about-section__text-box {
+    width: 641px;
+  }
+
+  .about-section__image {
+    margin-right: 30px;
+    width: 530px;
+  }
+
+  .about-section__section-title {
+    margin-bottom: 50px;
+
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+  }
+
+  .about-section__sub-title {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0.08em;
+  }
+
+  .about-section__list-item {
+    padding-left: 50px;
+
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .about-section__list-box {
+    width: 570px;
+  }
+
+  .about-section__list-item::before {
+    width: 24px;
+    height: 20px;
+  }
+
+  .about-section__text {
+    width: 660px;
+    margin-bottom: 18px;
+
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .about-section__link {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .about-section__list-item-box {
+    margin-bottom: 35px;
+  }
+}

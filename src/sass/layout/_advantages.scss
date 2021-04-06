@@ -1,0 +1,135 @@
+.advantages.section {
+  padding-top: 0;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+
+  // @media screen and (min-width: 1344px) {
+  //     padding-top: 100px;
+  // }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -22px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.advantages__item {
+  display: flex;
+  width: calc(100% / 1 - 22px);
+  margin-top: 30px;
+  margin-left: 22px;
+  margin: 0 auto;
+  position: relative;
+  // align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 22px);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1344px) {
+    align-items: center;
+    width: calc(100% / 3);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advantages__item_text {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  position: relative;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.65;
+    padding-left: 80px;
+  }
+}
+
+.advantages__text-m {
+  @media screen and (min-width: 1344px) {
+    padding-right: 70px;
+  }
+}
+
+.advantages__svg-f {
+  &::before {
+    display: inline-flex;
+    margin-right: 10px;
+    content: '';
+    width: 59px;
+    height: 60px;
+    background-image: url('../images/advantages-f.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: 1344px) {
+      background-image: url('../images/advantages__svg-f.svg');
+      width: 98px;
+      height: 102px;
+      position: absolute;
+      top: -39%;
+    }
+  }
+}
+
+.advantages__svg-m {
+  &::before {
+    display: inline-flex;
+    margin-right: 10px;
+    content: '';
+    width: 59px;
+    height: 60px;
+    background-image: url('../images/advantages-m.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: 1344px) {
+      background-image: url('../images/advantages__svg-m.svg');
+      width: 98px;
+      height: 102px;
+      position: absolute;
+      top: -39%;
+    }
+  }
+}
+
+.advantages__svg-p {
+  &::before {
+    display: block;
+    margin-right: 10px;
+    content: '';
+    width: 59px;
+    height: 60px;
+    background-image: url('../images/advantages-p.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: 1344px) {
+      background-image: url('../images/advantages__svg-p.svg');
+      width: 98px;
+      height: 102px;
+      position: absolute;
+      top: -39%;
+    }
+  }
+}

@@ -1,0 +1,216 @@
+/* ====================== HEADER-MOBILE =====================================*/
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display:block;
+    width: 100%;
+    max-width: 80px;
+    max-height: 28px;
+
+    &.black{
+        margin: 30px 0 0 0;
+        max-width: 80px;
+    }
+    &.white{
+        margin: 35px 0 0 0;
+    }
+    &_icon_svg{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 80px;
+        max-height: 28px;
+        margin-right: 0;
+    }
+}
+.menu_wriper{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+    margin: 0 auto;
+    background: rgba(17, 21, 24, 0.9);
+
+    &.is-open{
+        display: block;
+    }
+    &.is-open~.modal_button{
+        display: block;
+    }
+    &_container{
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+.menu_wriper_close{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button_menu{
+    outline: none;
+    border: none;
+    margin: 33px 0 0 auto;
+    background-color: transparent;
+    
+    &.open{
+        display: inline-block;
+    }
+    &.close{
+        display: inline-block;   
+    }
+    &_svg{
+        display: flex;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+    }
+}
+.modal_button{
+    display: none;
+    width: 100%;
+    max-width: 260px;
+    max-height: 48px;
+    margin: 0 auto;
+    padding: 14px 0;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent-color;
+    background-color: transparent;
+    border: 2px solid #FF6B09;
+    outline: none;
+
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.navi{
+    margin: 50px 0;
+
+    &_link{
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 1.8;
+        letter-spacing: 0.03em;
+        color: $secondary-color;
+
+        &.current{
+            color: $accent-color;
+        }
+    }
+}
+/* ====================== HEADER-TABLET =====================================*/
+@media screen and (min-width:768px){
+    .header .container{
+        position: relative;
+    } 
+    .logo{
+        max-width: 125px;
+        max-height: 48px;
+
+        &.black{
+            margin: 42px 0 0 0;
+        }
+        &.white{
+            margin: 42px 0 0 0;
+        }
+        &_icon_svg{
+            max-width: 125px;
+            max-height: 48px;
+        }
+    }
+    .menu_wriper_container{
+        max-width: 768px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .button_menu.open{
+        margin-top: 42px;
+    }
+    .navi{
+        margin: 70px 25% 0px 25%;
+    }
+    .modal_button{
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: 68%;
+        left: 68%;
+    }
+}
+/* ====================== HEADER-DASKTOP =====================================*/
+@media screen and (min-width:1344px){
+    
+    .logo{
+        &.white{
+            display: none;
+        }
+        &.black{
+            margin-top: 45px;
+            margin-right: 145px;
+        }
+    }
+    .button_menu.open{
+        display: none;
+    }
+    .button_menu.close{
+        display: none;
+    }
+    .menu_wriper{
+        position: static;
+        display: flex;
+        background-color: $secondary-color;
+     
+        &_container{
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .navi{
+        margin: 60px 0 15px 0;
+          
+        &_list{
+            display: flex;
+        }
+        &_item:not(:last-child){
+            margin-right: 40px;
+        }
+        &_link{
+            font-size: 14px;
+            line-height: 1.2;
+            color: $main-text-color;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    .modal_button{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 73%;
+        left: 83%;
+
+        max-width: 336px;
+        max-height: 70px;
+        padding: 25px 0 25px 0;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.22;
+        letter-spacing: 0.14em;
+    }
+}
