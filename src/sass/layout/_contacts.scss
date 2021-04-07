@@ -173,7 +173,7 @@
     screen and (min-resolution: 2dppx) {
     .section.contacts {
       background-image: url('../images/contacts/contacts-desk@2x.png');
-      background-size: auto;
+      background-size: cover;
       background-position-x: 52%;
     }
   }
