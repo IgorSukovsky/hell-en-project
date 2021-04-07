@@ -164,7 +164,7 @@
     padding-top: 100px;
     padding-bottom: 62px;
     background-image: url('../images/contacts/contacts-desk.png');
-    background-position: 23% 51%;;
+    background-position-x: 52%;
     background-size: auto;
   }
 
@@ -173,6 +173,8 @@
     screen and (min-resolution: 2dppx) {
     .section.contacts {
       background-image: url('../images/contacts/contacts-desk@2x.png');
+      background-size: auto;
+      background-position-x: 52%;
     }
   }
 
