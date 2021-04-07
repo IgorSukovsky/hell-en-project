@@ -10,6 +10,10 @@
   }
 }
 
+.section--hero__box {
+  margin-bottom: 30px;
+}
+
 .section-title--hero {
   margin-bottom: 30px;
 
@@ -44,7 +48,6 @@
   padding: 14px 5px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 12px;
@@ -108,13 +111,17 @@
 
     padding-bottom: 0;
   }
+
+  .section--hero__box {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1344px) {
   .section.section--hero {
     padding-top: 45px;
   }
-  
+
   .section-title--hero {
     font-size: 58px;
     margin-bottom: 24px;

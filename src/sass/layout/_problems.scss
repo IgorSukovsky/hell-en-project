@@ -69,27 +69,32 @@
 .problems__item {
     position: relative;
     width: calc(100% / 1 - 22px);
-    // margin-left: 22px;
-    margin-top: 10px;
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
 
     @media screen and (min-width: 768px) {
         width: calc(100% / 2);
-        // padding-left: 96px;
+        
+        &:nth-child(-n + 3) {
+            margin-top: 0;
+        }
     }
 
     @media screen and (min-width: 1344px) {
         width: calc(100% / 3);
-        }
 
-        @media screen and (min-width: 1344px) {
-            &:nth-child(-n + 3){
+        &:nth-child(-n + 3) {
+            margin-top: 0;
             margin-bottom: 32px;
-            }
-
-            // &:nth-child(-n + 3){
-            // margin-bottom: 32px;
-            // }
         }
+    }
+
+        // @media screen and (min-width: 1344px) {
+        //     &:nth-child(-n + 3){
+        //     margin-bottom: 32px;
+        //     }
+        // }
 
     &::before {
         display: inline-flex;

@@ -4,28 +4,30 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .logo{
     display:block;
     width: 100%;
-    max-width: 80px;
-    max-height: 28px;
-
     &.black{
-        margin: 30px 0 0 0;
+        padding: 30px 0 0 0;
         max-width: 80px;
     }
     &.white{
-        margin: 35px 0 0 0;
+        padding: 30px 0 0 0;
     }
     &_icon_svg{
         display: block;
         justify-content: center;
         align-items: center;
-        max-width: 80px;
-        max-height: 28px;
         margin-right: 0;
     }
 }
+
+.logo_icon_svg {
+    width: 80px;
+    height: 28px;
+}
+
 .menu_wriper{
     display: none;
     position: fixed;
@@ -51,15 +53,22 @@
         padding-left: 20px;
     }
 }
-.menu_wriper_close{
+.menu_wriper_close{    
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 38px;
+    }
 }
+
+
 .button_menu{
     outline: none;
     border: none;
-    margin: 33px 0 0 auto;
+    padding: 33px 0 0 0;
+    margin-left: auto; 
     background-color: transparent;
     
     &.open{
@@ -89,9 +98,8 @@
     background-color: transparent;
     border: 2px solid #FF6B09;
     outline: none;
-
     position: fixed;
-    top: 43%;
+    top: 315px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -106,29 +114,36 @@
         letter-spacing: 0.03em;
         color: $secondary-color;
 
-        &.current{
+        &:hover,
+        &:focus{
             color: $accent-color;
         }
     }
 }
 /* ====================== HEADER-TABLET =====================================*/
 @media screen and (min-width:768px){
+
+    .header .container {
+        padding-top: 40px;
+    }
+
+    .logo_icon_svg {
+        width: 128px;
+        height: 45px;
+    }
+
     .header .container{
         position: relative;
     } 
     .logo{
-        max-width: 125px;
-        max-height: 48px;
 
         &.black{
-            margin: 42px 0 0 0;
+            // padding: 0px 0 0 0;
+            padding: 0;
         }
         &.white{
-            margin: 42px 0 0 0;
-        }
-        &_icon_svg{
-            max-width: 125px;
-            max-height: 48px;
+            padding: 0;
+            // padding: 28px 0 0 0;
         }
     }
     .menu_wriper_container{
@@ -136,8 +151,11 @@
         padding-right: 40px;
         padding-left: 40px;
     }
+    .button_menu {
+        padding-top: 0;
+    }
     .button_menu.open{
-        margin-top: 42px;
+        padding-top: 0;
     }
     .navi{
         margin: 70px 25% 0px 25%;
@@ -146,19 +164,21 @@
         display: block;
         position: absolute;
         z-index: 0;
-        top: 68%;
+        top: 73.1%;
         left: 68%;
     }
 }
 /* ====================== HEADER-DASKTOP =====================================*/
 @media screen and (min-width:1344px){
     
+    .header .container {
+        padding-top: 45px;
+    }
     .logo{
         &.white{
             display: none;
         }
         &.black{
-            margin-top: 45px;
             margin-right: 145px;
         }
     }
@@ -178,9 +198,12 @@
             padding: 0;
             margin: 0;
         }
+        &_close{
+            padding: 0;
+        }
     }
     .navi{
-        margin: 60px 0 15px 0;
+        margin:0;
           
         &_list{
             display: flex;

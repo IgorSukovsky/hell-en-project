@@ -1,6 +1,6 @@
 .footer {
   padding-top: 30px;
-  background: linear-gradient(to bottom, $secondary-color 70%, #111518 30%);
+  background: linear-gradient(to bottom, $secondary-color 74%, #111518 26%);
 
   @media screen and (min-width: 768px) {
     background: linear-gradient(to bottom, $secondary-color 64%, #111518 36%);
@@ -8,15 +8,36 @@
   }
 
   @media screen and (min-width: 1344px) {
-    background: linear-gradient(to bottom, $secondary-color 68%, #111518 32%);
+    background: linear-gradient(to bottom, $secondary-color 71%, #111518 29%);
     padding-top: 0;
   }
 }
 
+.footer-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
 
-.contacts-block {
-  @media screen and (max-width: 768px) {
+    @media screen and (min-width: 1344px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+}
+
+.contact-block {
+  @media screen and (min-width: 768px) {
     text-align: center;
   }
 
@@ -45,19 +66,20 @@
 }
 .address-wrap {
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     position: relative;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1344px) {
     margin-left: 290px;
   }
 }
-.contacts-phone {
+.contact-phone {
     font-style: normal;
 }
-.contacts-phone {
+.contact-phone {
   text-align: center;
   font-weight: 600;
   font-size: 14px;
@@ -75,7 +97,7 @@
     line-height: 1.23;
   }
 
-  .contacts-link {
+  .contact-link {
     color: #111518;
     transition: 250ms ;
 
@@ -85,7 +107,7 @@
   }
 }
 
-.contacts-icon {
+.contact-icon {
   vertical-align: middle;
   margin-right: 10px;
 
@@ -106,10 +128,16 @@
 }
 
 .instagram-link {
-  margin-bottom: 30px;
   margin-top: 30px;
   display: inline-block;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .instagram-link::before {
@@ -120,6 +148,7 @@
     height: 40px;
     position: absolute;
     right: 64px;
+    
   }
 }
 
@@ -145,6 +174,12 @@
 
   @media screen and (max-width: 767px) {
     text-align: center;
+  }
+}
+
+.copy-block {
+  @media screen and (min-width: 1344px) {
+    margin: 0 auto;
   }
 }
 

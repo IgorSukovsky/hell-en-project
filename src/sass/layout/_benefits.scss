@@ -17,8 +17,6 @@
 .benefits__list {
     display: flex;
     flex-wrap: wrap;
-    // margin-left: -22px;
-    // margin-top: -10px;
     counter-reset: item;
     padding: 20px 14px 20px 30px;
     background-color:$secondary-color;
@@ -43,7 +41,7 @@
     width: 200px;
 
     @media screen and (min-width: 768px) {
-        width: 480px;
+        width: 100%;
         text-align: center;
     }
 
@@ -115,15 +113,3 @@
         font-size: 20px;
     }
 }
-
-// .problems__item_text::before {
-//     display: block;
-//     content: counter(item);
-//     counter-increment: item;
-//     width: 16px;
-//     height: 16px;
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 1.64;
-//     color: $accent-color;
-// }

@@ -29,6 +29,7 @@
         letter-spacing: 0.08em;
         text-align: center;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: 20px;
 
         @media screen and (min-width: 1334px) {
             font-size: 20px;
@@ -39,7 +40,9 @@
             width: 25px;
             height: 2px;
             background-color: #FF6B09;
-            margin: 20px auto;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
