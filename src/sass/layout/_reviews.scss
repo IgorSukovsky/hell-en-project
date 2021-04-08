@@ -79,6 +79,7 @@
 }
 
 .reviews-section__gallery {
+  outline: none;
   margin-right: auto;
   margin-left: auto;
   width: 175px;
@@ -89,6 +90,7 @@
   border: transparent;
   background-color: transparent;
   color: transparent;
+  outline: none;
 
   top: 40%;
   left: -25%;
@@ -97,6 +99,7 @@
 }
 
 .slick-next {
+  outline: none;
   position: absolute;
   border: transparent;
   background-color: transparent;
@@ -137,6 +140,7 @@
 }
 
 .slick-initialized .slick-slide {
+  outline: none;
   display: block;
 }
 

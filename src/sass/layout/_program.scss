@@ -14,7 +14,7 @@
 }
 
 .study-program{
-     padding-left: 80px;   
+     padding-left: 74px;   
 }
 
 .study-program::after{
@@ -47,6 +47,8 @@
         }
 }
 .semestr {
+    font-size: 14px;
+    line-height: 2;
     position:relative;
     padding-left: 30px;
     color:$secondary-color;
@@ -73,6 +75,8 @@
 }
 
 .modul{
+    font-size: 12px;
+    line-height: 1.65;
     padding-top: 10px;
     padding-bottom: 10px;
     color:$accent-color;
@@ -95,8 +99,11 @@
 }
 .topics{
     margin-top: 10px;
-}    
+}   
+
 .topic{
+    font-size: 12px;
+    line-height: 1.67;
     position: relative;
     opacity: 0.5;
     color:$main-text-color;
@@ -108,7 +115,7 @@
 @media screen and (min-width: 768px) {
 
     .section.program {
-        height: 989px;
+        height: 1015px;
     }
 
     .program.section-title {
@@ -133,6 +140,7 @@
         display: flex;
                             
     } 
+
     .modul{
         justify-content: space-between;
         width: 175px;
@@ -143,7 +151,7 @@
     }
     .study-program::after{
         display: block;
-        bottom: -19%;
+        bottom: -17%;
         right: 0;
         content:"";
         width: 404px;
@@ -172,7 +180,7 @@
 @media screen and (min-width: 1344px) {
 
     .section.program {
-        height: auto;
+        height: 827px;
     }
     .program.section-title {
         margin-bottom: 100px;
@@ -185,14 +193,14 @@
     }
     .study-program::after{
 
-        bottom: -67%;
-        right:59%;
+        bottom: -36%;
+        right: 63%;
         content:"";
         height: 500px;
         width: 670px;
         background-image:url(../images/program/classroom1xD.png);
         background-repeat: no-repeat;
-        background-size: 550px 370px;
+        background-size: cover;
     }
     @media screen and (min-device-pixel-ratio:2),
     screen and(min-resolution:192 dpi),
@@ -202,6 +210,7 @@
         
         }
     }
+
     @media screen and (min-device-pixel-ratio:3),
     screen and(min-resolution:288 dpi),
     screen and(min-resolution: 3 dppx){
@@ -210,11 +219,24 @@
         
         }
     }
+
+    .modul {
+        font-size: 20px;
+        width: 210px;
+    }
+
+    .topic {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+
     .moduls{
         
         flex-direction: column;
     }
     .semestr{
+        font-size: 20px;
+        line-height: 1.4;
         padding-top: 3%;
         padding-left: 0px;
     }
@@ -224,9 +246,5 @@
     }
     .semestr:not(:last-child) {
         border-left:0;
-        
-        
     }
-
-
 }

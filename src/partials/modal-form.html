@@ -1,0 +1,28 @@
+<div class="backdrop" data-backdrop>
+    <div class="container">
+        <form class="modal_form" method="#" action="#">
+            <h2 class="title">Оставьте свои данные мы Вам перезвоним!</h2>
+            <button class="modal_form_close" type="button" data-modal-close>
+                <svg class="modal_form_close-svg">
+                    <use href="./images/icons.svg#icon-mobile-menu-close-modal"></use>
+                </svg>
+            </button>
+            <label class="label" for="user_name">Имя</label>
+            <input class="input" type="text" name="user_name" id="user_name" required>
+    
+            <label class="label" for ="user_tel">Телефон</label>
+            <input class="input" type="tel" name="user_tel" id="user_tel" required>
+    
+            <label class="label" for ="user_email">E-mail</label>
+            <input class="input" type="email" name="user_email" id ="user_email">
+    
+            <textarea class="texterea" id="user-textarea" name="user-textarea" placeholder="Коментарии"></textarea>
+    
+            <label class="label_checkbox" for="checkbox">
+                <input class="input_checkbox" type="checkbox" name="checkbox" id="checkbox" checked required>
+                Я соглашаюсь с рассылкой
+            </label>
+            <button class="modal_button_sent" type="submit">Заказать консультацию</button>
+        </form>
+    </div>
+</div>

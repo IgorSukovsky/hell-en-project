@@ -6,11 +6,9 @@
 }
 
 .logo{
-    display:block;
-    width: 100%;
+    display:inline-block;
     &.black{
         padding: 30px 0 0 0;
-        max-width: 80px;
     }
     &.white{
         padding: 30px 0 0 0;
@@ -43,6 +41,7 @@
         display: block;
     }
     &.is-open~.modal_button{
+        cursor: pointer;
         display: block;
     }
     &_container{
@@ -68,7 +67,6 @@
     outline: none;
     border: none;
     padding: 33px 0 0 0;
-    margin-left: auto; 
     background-color: transparent;
     
     &.open{
@@ -85,6 +83,7 @@
     }
 }
 .modal_button{
+    cursor: pointer;
     display: none;
     width: 100%;
     max-width: 260px;
@@ -224,7 +223,7 @@
         position: absolute;
         z-index: 1;
         top: 73%;
-        left: 83%;
+        left: 86%;
 
         max-width: 336px;
         max-height: 70px;

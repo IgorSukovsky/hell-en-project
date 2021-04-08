@@ -243,3 +243,51 @@
     color: #FF6B09;
   }
 }
+
+
+
+// @media screen and(min-width: 480px) {
+.instagram-link {
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+    position: relative;
+    // transform: translateX(10%);
+    
+    
+}
+
+.item1 {
+  width: 10px;
+  height: 50px;
+  background: linear-gradient(to right, transparent, White, transparent);
+  z-index: 1;
+  position: relative;
+  animation: move 2s linear 1s infinite alternate;
+  
+  
+  }
+
+@keyframes move {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.item1 {
+  @media screen and(max-width: 769px) {
+    width: 10px;
+    height: 50px;
+    background: linear-gradient(to right, transparent, White, transparent);
+    z-index: 1;
+    position: absolute;
+    animation: move 2s linear 1s infinite alternate;
+    margin: -43px auto;
+    /* padding: 0px; */
+    margin-left: 120px;
+    ;
+  }
+} 
